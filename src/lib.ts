@@ -1,4 +1,6 @@
-export function generateHtml(subdomain: string, message: string = `${subdomain} いんたーねっと`) {
+import * as punycode from "punycode";
+export function generateHtml(subdomain: string) {
+    const decoded_subdomain = punycode.decode(subdomain);
     if (subdomain == "xn--n8juc3h5p") return `<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -33,11 +35,11 @@ export function generateHtml(subdomain: string, message: string = `${subdomain} 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="いんたー.net">
 <meta name="twitter:description" content="">
-<title>${subdomain}.いんたー.net</title>
+<title>${decoded_subdomain}.いんたー.net</title>
 </head>
 <body>
-<h1>${subdomain}.いんたー.net</h1>
-<p>${message}</p>
+<h1>${decoded_subdomain}.いんたー.net</h1>
+<p>${decoded_subdomain} いんたーねっと</p>
 <!-- AddToAny BEGIN -->
 <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
 <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
