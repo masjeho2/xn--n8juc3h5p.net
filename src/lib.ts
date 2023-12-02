@@ -1,6 +1,6 @@
 import * as punycode from "punycode";
 export function generateHtml(subdomain: string) {
-    const decoded_subdomain = punycode.decode(subdomain);
+    const decoded_subdomain = punycode.toUnicode(subdomain);
     if (subdomain == "xn--n8juc3h5p") return `<!DOCTYPE html>
 <html lang="ja">
 <head>
