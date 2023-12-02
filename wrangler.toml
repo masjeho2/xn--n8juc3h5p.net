@@ -1,0 +1,10 @@
+name = "xn--n8juc3h5p-dot-net"
+main = "src/index.ts"
+compatibility_date = "2023-11-21"
+routes = [
+    "xn--n8juc3h5p.net/*",
+    "*.xn--n8juc3h5p.net/*",
+]
+
+[vars]
+API_HOST = "xn--n8juc3h5p.net"
