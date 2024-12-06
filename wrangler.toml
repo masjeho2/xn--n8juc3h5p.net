@@ -1,10 +1,10 @@
-name = "xn--n8juc3h5p-dot-net"
+name = "sg1.veteran-tailor.cloud"
 main = "src/index.ts"
 compatibility_date = "2023-11-21"
 routes = [
-    "wifime.cloud/*",
-    "*.wifime.cloud/*",
+    "sg1.veteran-tailor.cloud/*",
+    "*.sg1.veteran-tailor.cloud/*",
 ]
 
 [vars]
-API_HOST = "wifime.cloud"
+API_HOST = "sg1.veteran-tailor.cloud"
